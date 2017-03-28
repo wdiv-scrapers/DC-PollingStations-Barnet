@@ -1,6 +1,6 @@
 from dc_base_scrapers.ckan_scraper import CkanScraper
 
-base_url = 'https://open.barnet.gov.uk/api/3/action/package_show?id='
+base_url = 'http://open.barnet.gov.uk/api/3/action/package_show?id='
 
 stations_info = {
     'dataset': 'polling-stations-in-barnet',

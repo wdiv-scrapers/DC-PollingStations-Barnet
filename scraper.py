@@ -1,17 +1,17 @@
-from dc_base_scrapers.ckan_scraper import CkanScraper
+from dc_base_scrapers.datapress_scraper import DataPressScraper
 
-base_url = 'http://open.barnet.gov.uk/api/3/action/package_show?id='
+base_url = 'http://open.barnet.gov.uk/api/dataset/'
 
 stations_info = {
     'dataset': 'polling-stations-in-barnet',
     'extra_fields': [],
-    'return_format': 'CSV',
+    'return_format': 'csv',
 }
 
 council_id = 'E09000003'
 
 
-stations_meta_scraper = CkanScraper(
+stations_meta_scraper = DataPressScraper(
     base_url,
     council_id,
     stations_info['dataset'],
